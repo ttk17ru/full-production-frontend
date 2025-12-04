@@ -37,12 +37,12 @@ body
   padding: 4px;
 
   /* background: linear-gradient(); */
-  background-color: rgb(2, 197, 197);
+  background: linear-gradient(to right bottom, rgb(1, 1, 183), rgb(154, 1, 1));
 
   border: none;
   border-radius: 10px;
 
-  box-shadow: 0 0 10px rgb(153, 226, 42);
+  box-shadow: 0 0 10px rgb(109, 42, 226);
 }
 
 .main-con
