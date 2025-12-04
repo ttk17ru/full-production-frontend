@@ -3,7 +3,7 @@
 
 ***About The Project***
 
-Professional live leaderboard for competitions
+Professional platform for handling competitions and teams management
 in ESports.
 
 Started: 3 December 2025
@@ -15,6 +15,8 @@ Status: In Development
 ---
 
 ***Frontend Developers***
+
+ivanfady
 
 shiko552009
 
