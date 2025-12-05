@@ -1,0 +1,72 @@
+button
+{
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.nor-button
+{
+  color: var(--white-text);
+  background-color: var(--gunmetal-background);
+
+  width: 128px;
+  height: 48px;
+  
+  text-align: center;
+  font-size: 2rem;
+  /* font-weight: bold; */
+  font-family: TekoMedium;
+
+  border-color: var(--military-gray-blue);
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 10px;
+
+  /* box-shadow: 0 0 15px var(--neon-cyan); */
+}
+.nor-button:hover
+{
+  /* font-size: 1.7rem; */
+  width: 136px;
+  height: 48px;
+  box-shadow: 0 0 10px var(--neon-cyan);
+}
+.nor-button:active
+{
+  /* font-size: 1.5rem; */
+  box-shadow: 0 0 12px var(--neon-cyan);
+}
+
+.pro-button
+{
+  color: var(--white-text);
+  background-color: var(--gunmetal-background);
+
+  width: 128px;
+  height: 48px;
+  
+  text-align: center;
+  font-size: 2rem;
+  /* font-weight: bold; */
+  font-family: TekoBold;
+
+  border-color: var(--military-gray-blue);
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 10px;
+
+  /* box-shadow: 0 0 15px var(--neon-cyan); */
+
+  animation: neonInOut 2s ease-in-out infinite;
+}
+.pro-button:hover
+{}
+.pro-button:active
+{}
+
+.sad-button
+{}
+.sad-button:hover
+{}
+.sad-button:active
+{}

@@ -1,0 +1,16 @@
+@keyframes neonInOut {
+  0%
+  {
+    box-shadow: 0 0 16px var(--neon-cyan);
+  }
+
+  50%
+  {
+    box-shadow: 0 0 8px var(--neon-cyan);
+  }
+
+  100%
+  {
+    box-shadow: 0 0 16px var(--neon-cyan);
+  }
+}
