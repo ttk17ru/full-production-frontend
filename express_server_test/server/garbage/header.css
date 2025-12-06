@@ -19,7 +19,6 @@
     position: var(--header-position);
     top: var(--header-top);
     left: var(--header-left);
-    z-index: var(--header-z-index);
 }
 
 .logo-con
@@ -50,7 +49,7 @@
 {
     display: flex;
     flex-direction: row;
-    gap: 32px;
+    gap: 48px;
 }
 
 .header-button
@@ -71,12 +70,4 @@
 
     font-family: var(--header-button-font-family);
     font-size: var(--header-button-font-size);
-}
-.header-button:hover
-{
-    background-color: var(--header-button-hover-background-color);
-}
-.header-button:active
-{
-    background-color: var(--header-button-active-background-color);
 }

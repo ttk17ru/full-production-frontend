@@ -4,7 +4,10 @@
   color: var(--nor-button-color);
   background-color: var(--nor-button-background-color);
 
-  padding: 6px 24px;
+  width: 128px;
+  height: 48px;
+
+  padding: ;
   
   /* text-align: center; */
   font-size: var(--nor-button-font-size);
@@ -16,7 +19,7 @@
   border-width: var(--nor-button-border-width);
   border-radius: var(--nor-button-border-radius);
 
-  box-shadow: 0 0 15px var(--nor-button-background-color);
+  /* box-shadow: 0 0 15px var(--neon-cyan); NOT NEEDED */
 }
 .nor-button:hover
 {
@@ -36,7 +39,8 @@
   color: var(--pro-button-color);
   background: var(--pro-button-background-color);
 
-  padding: 6px 24px;
+  width: 128px;
+  height: 48px;
   
   /* text-align: center; */
   font-size: var(--pro-button-font-size);
