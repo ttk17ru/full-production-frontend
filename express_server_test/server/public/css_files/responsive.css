@@ -1,0 +1,11 @@
+@media (max-width: 444px) {
+    .data_inp_con input {
+        font-size: 1.7rem;
+        width: 80%;
+    }
+
+    .data_inp_con label {
+        font-size: 1.7rem;
+        width: auto;
+    }
+}

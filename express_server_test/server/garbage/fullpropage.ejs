@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show Data</title>
+  <link rel="shortcut icon" href="/assets/bad.ico" type="image/x-icon">
+  <style>
+    body
+    {
+      background-image: url('/assets/bg.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-color: black;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin: 0;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .main-con
+    {
+      background-color: rgba(0, 0, 0, 0.937);
+
+      display: flex;
+      padding: 10px;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+
+      width: 400px;
+      height: auto;
+      border-radius: 20px;
+    }
+
+    .player
+    {
+      font-size: 20px;
+
+      color: red;
+      width: 100%;
+      height: auto;
+    }
+
+    .hp
+    {
+      background-color: green;
+      border: none;
+      border-radius: 2px;
+      height: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-con">
+    <% data.forEach(p => { %>
+      <div class="player">
+        <span><%= p.name %></span>
+        <div class="hp" style="width: <%= p.hp %>px;"></div>
+      </div>
+    <% }) %>
+  </div>
+
+  <script>
+    // async function loadData() {
+    //   const res = await fetch("http://server-ip:3000/teams");
+    //   const data = await res.json();
+    //   console.log(data);
+    //   return data;
+    // }
+
+    // setInterval(async () => {
+    //   const data = await loadData();
+    //   updateUI(data);
+    // }, 1000);
+
+    // let data = {
+    //   "player1": {
+    //     "name": "Ivan",
+    //     "hp": 45,
+    //   },
+    //   "player2": {
+    //     "name": "Shiko",
+    //     "hp": 90
+    //   },
+    //   "player3": {
+    //     "name": "Nagy",
+    //     "hp": 85
+    //   }
+    // };
+
+  // async function loadData() {
+  //   const res = await fetch("http://server-ip:3000/teams");
+  //   const data = await res.json();
+  //   updateUI(data);
+  // }
+
+  function updateUI(data) {
+    const container = document.querySelector('.main-con');
+    container.innerHTML = ''; // clear old data
+    data.forEach(p => {
+      const playerDiv = document.createElement('div');
+      playerDiv.className = 'player';
+      playerDiv.innerHTML = `
+        <span>${p.name}</span>
+        <div class="hp" style="width: ${p.hp}%"></div>
+      `;
+      container.appendChild(playerDiv);
+    });
+  }
+
+  setInterval(loadData, 1000);
+
+  </script>
+</body>
+</html>

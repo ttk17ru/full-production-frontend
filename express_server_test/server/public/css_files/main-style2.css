@@ -1,0 +1,114 @@
+@import url("fonts/fonts.css");
+
+:root
+{
+  /* NORMAL BUTTONS */
+  --nor-button-background-color: rgb(167, 18, 18);
+  --nor-button-color: rgb(27, 27, 27);
+  /* ----- */
+  --nor-button-border-color: black;
+  --nor-button-border-style: none;
+  --nor-button-border-width: 0;
+  --nor-button-border-radius: 12px;
+  /* ----- */
+  --nor-button-font-family: TekoMedium;
+  --nor-button-font-size: 1.7rem;
+  /* --nor-button-font-weight: ; NOT NEEDED */
+  /* ----- */
+  --nor-button-hover-background-color: rgb(150, 17, 17);
+  /* --nor-button-hover-color: ; NOT NEEDED */
+  /* ----- */
+  --nor-button-active-background-color: rgb(173, 18, 18);
+  /* --nor-button-active-color: ; NOT NEEDED */
+
+
+  /* PRO BUTTONS */
+  --pro-button-background-color: linear-gradient(to top, rgb(229, 67, 30), rgb(255, 123, 0));
+  --pro-button-color: black;
+  /* ----- */
+  --pro-button-border-color: black;
+  --pro-button-border-style: none;
+  --pro-button-border-width: 0;
+  --pro-button-border-radius: 12px;
+  /* ----- */
+  --pro-button-font-family: TekoBold;
+  --pro-button-font-size: 1.7rem;
+  /* --pro-button-font-weight: ; NOT NEEDED */
+  /* ----- */
+  --pro-button-box-shadow-color: rgb(255, 123, 0);
+  /* ----- */
+  /* --pro-button-hover-background-color: ; NOT NEEDED*/
+  /* --pro-button-hover-color: ; NOT NEEDED */
+  /* ----- */
+  /* --pro-button-active-background-color: ; NOT NEEDED */
+  /* --pro-button-active-color: ; NOT NEEDED */
+
+  /* WEBSITE HEADER */
+  --header-padding: 0;
+  /* ----- */
+  --header-display: flex;
+  --header-flex-direction: row;
+  --header-justify-content: space-around;
+  --header-align-items: center;
+  /* ----- */
+  --header-width: 100%;
+  --header-height: 72px;
+  /* ----- */
+  --header-background-color: black;
+  --header-border-color: black;
+  --header-border-style: none;
+  --header-border-width: 0;
+  --header-border-radius: 0;
+  /* ----- */
+  --header-position: fixed;
+  --header-top: 0;
+  --header-left: 0;
+  
+  /* HEADER BUTTONS CONTAINER !NOT IN IT THE SIDE BUTTONS! */
+
+  /* HEADER BUTTON */
+  --header-button-width: 80px;
+  --header-button-height: 100%;
+  /* ----- */
+  --header-button-background-color: transparent;
+  --header-button-color: rgb(217, 217, 217);
+  /* ----- */
+  --header-button-border-color: black;
+  --header-button-border-style: none;
+  --header-button-border-width: 0;
+  --header-button-border-radius: 0;
+  --header-button-border-bottom-style: solid;
+  --header-button-border-bottom-color: rgb(167, 18, 18);
+  --header-button-border-bottom-width: 2px;
+  /* ----- */
+  --header-button-font-family: OswaldSemiBold;
+  --header-button-font-size: 1.7rem;
+  /* ----- */
+  --header-button-hover-background-color: rgb(228, 228, 228);
+  /* ----- */
+  --header-button-active-background-color: rgb(217, 217, 217);
+}
+
+body
+{
+  background-color: rgb(49, 49, 49);
+
+  width: 100%;
+  height: 100vh;
+
+  transition: 0.3s;
+}
+
+*
+{
+  transition: 0.17s;
+  padding: 0;
+  margin: 0;
+}
+
+button
+{
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+}

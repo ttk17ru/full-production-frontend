@@ -1,0 +1,169 @@
+@font-face {
+    font-family: AgencyFB;
+    src: url("agency_fb.ttf");
+}
+
+@font-face {
+    font-family: Franklin Gothic Medium;
+    src: url("Franklin Gothic Medium Regular.ttf");
+}
+
+@font-face {
+    font-family: VALORANT;
+    src: url("Valorant.ttf");
+}
+
+@font-face {
+    font-family: EurostileExtd;
+    src: url("Eurostile-Medium Medium.ttf");
+}
+
+@font-face {
+    font-family: Monserrat;
+    src: url("Montserrat-Black.ttf");
+}
+
+@font-face {
+    font-family: MonserratSemiBold;
+    src: url("Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: AmericanCaptain;
+    src: url("AmericanCaptain.ttf");
+}
+
+@font-face {
+    font-family: AmaranthBold;
+    src: url("Amaranth-Bold.ttf");
+}
+
+@font-face {
+    font-family: AmaranthBoldItalic;
+    src: url("Amaranth-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: AmaranthItalic;
+    src: url("Amaranth-Italic.ttf");
+}
+
+@font-face {
+    font-family: AmaranthRegular;
+    src: url("Amaranth-Regular.ttf");
+}
+
+@font-face {
+    font-family: EncodeSansSemiExpandedBlack;
+    src: url("EncodeSansSemiExpanded-Black.ttf");
+}
+
+@font-face {
+    font-family: EncodeSansSemiExpandedBold;
+    src: url("EncodeSansSemiExpanded-Bold.ttf");
+}
+
+@font-face {
+    font-family: EncodeSansSemiExpandedLight;
+    src: url("EncodeSansSemiExpanded-Light.ttf");
+}
+
+@font-face {
+    font-family: EncodeSansSemiExpandedRegular;
+    src: url("EncodeSansSemiExpanded-Regular.ttf");
+}
+
+@font-face {
+    font-family: FontAwesomeBrands;
+    src: url("fa-brands-400.ttf");
+}
+
+@font-face {
+    font-family: FontAwesomeRegular;
+    src: url("fa-regular-400.ttf");
+}
+
+@font-face {
+    font-family: FontAwesomeSolid;
+    src: url("fa-solid-900.ttf");
+}
+
+@font-face {
+    font-family: MontserratLight;
+    src: url("Montserrat-Light.ttf");
+}
+
+@font-face {
+    font-family: MontserratAlternatesBlack;
+    src: url("MontserratAlternates-Black.ttf");
+}
+
+@font-face {
+    font-family: MontserratAlternatesBold;
+    src: url("MontserratAlternates-Bold.ttf");
+}
+
+@font-face {
+    font-family: MontserratAlternatesLight;
+    src: url("MontserratAlternates-Light.ttf");
+}
+
+@font-face {
+    font-family: MontserratAlternatesRegular;
+    src: url("MontserratAlternates-Regular.ttf");
+}
+
+@font-face {
+    font-family: NordeaSansSmallRegular;
+    src: url("NordeaSansSmall-Regular.woff2");
+}
+
+@font-face {
+    font-family: OswaldBold;
+    src: url("Oswald-Bold.ttf");
+}
+
+@font-face {
+    font-family: OswaldExtraLight;
+    src: url("Oswald-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: OswaldLight;
+    src: url("Oswald-Light.ttf");
+}
+
+@font-face {
+    font-family: OswaldRegular;
+    src: url("Oswald-Regular.ttf");
+}
+
+@font-face {
+    font-family: OswaldSemiBold;
+    src: url("Oswald-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: TekoBold;
+    src: url("Teko-Bold.ttf");
+}
+
+@font-face {
+    font-family: TekoLight;
+    src: url("Teko-Light.ttf");
+}
+
+@font-face {
+    font-family: TekoMedium;
+    src: url("Teko-Medium.ttf");
+}
+
+@font-face {
+    font-family: TekoRegular;
+    src: url("Teko-Regular.ttf");
+}
+
+@font-face {
+    font-family: TekoSemiBold;
+    src: url("Teko-SemiBold.ttf");
+}

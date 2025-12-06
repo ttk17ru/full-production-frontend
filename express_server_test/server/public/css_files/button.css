@@ -1,0 +1,66 @@
+/* NORMAL BUTTONS */
+.nor-button
+{
+  color: var(--nor-button-color);
+  background-color: var(--nor-button-background-color);
+
+  width: 128px;
+  height: 48px;
+
+  padding: ;
+  
+  /* text-align: center; */
+  font-size: var(--nor-button-font-size);
+  font-weight: var(--nor-button-font-weight);
+  font-family: var(--nor-button-font-family);
+
+  border-color: var(--nor-button-border-color);
+  border-style: var(--nor-button-border-style);
+  border-width: var(--nor-button-border-width);
+  border-radius: var(--nor-button-border-radius);
+
+  /* box-shadow: 0 0 15px var(--neon-cyan); NOT NEEDED */
+}
+.nor-button:hover
+{
+  background-color: var(--nor-button-hover-background-color);
+  /* box-shadow: 0 0 10px var(--neon-cyan); NOT NEEDED */
+}
+.nor-button:active
+{
+  background-color: var(--nor-button-active-background-color);
+  /* font-size: 1.5rem; NOT NEEDED */
+  /* box-shadow: 0 0 12px var(--neon-cyan); NOT NEEDED */
+}
+
+/* PRO BUTTONS */
+.pro-button
+{
+  color: var(--pro-button-color);
+  background: var(--pro-button-background-color);
+
+  width: 128px;
+  height: 48px;
+  
+  /* text-align: center; */
+  font-size: var(--pro-button-font-size);
+  /* font-weight: var(--pro-button-font-weight); NOT NEEDED */
+  font-family: var(--pro-button-font-family);
+
+  border-color: var(--pro-button-border-color);
+  border-style: var(--pro-button-border-style);
+  border-width: var(--pro-button-border-width);
+  border-radius: var(--pro-button-border-radius);
+
+  box-shadow: 0 0 15px var(--pro-button-box-shadow-color);
+}
+.pro-button:hover
+{
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--pro-button-box-shadow-color);
+}
+.pro-button:active
+{
+  transform: scale(0.95);
+  box-shadow: 0 0 10px var(--pro-button-box-shadow-color);
+}

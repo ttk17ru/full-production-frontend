@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TTK Chat</title>
+  <style>
+  </style>
+</head>
+<body>
+  <h2 style="color: red;">Anonymous Chat</h2>
+  <ul id="messages"></ul>
+  <form id="form">
+    <input id="input" autocomplete="off" placeholder="Type a message..."/>
+    <button>Send</button>
+  </form>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+    const form = document.getElementById("form");
+    const input = document.getElementById("input");
+    const messages = document.getElementById("messages");
+
+    // Load history
+    socket.on("chat history", (history) => {
+      history.forEach(addMessage);
+    });
+
+    // When new message received
+    socket.on("chat message", (msg) => {
+      addMessage(msg);
+    });
+
+    // Submit form
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (input.value) {
+        socket.emit("chat message", input.value);
+        input.value = "";
+      }
+    });
+
+    function addMessage(msg) {
+      const li = document.createElement("li");
+      li.textContent = msg;
+      messages.appendChild(li);
+      messages.scrollTop = messages.scrollHeight;
+    }
+  </script>
+</body>
+</html>

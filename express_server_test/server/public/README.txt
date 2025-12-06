@@ -1,0 +1,1 @@
+This folder contains what the files that the server needs like assets css files and all

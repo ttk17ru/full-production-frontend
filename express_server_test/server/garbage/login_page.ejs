@@ -1,0 +1,68 @@
+ <!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Log In Page</title>
+	<link rel="stylesheet" href="/css_files/main-style.css">
+	<link rel="stylesheet" href="/css_files/responsive.css">
+	<link rel="shortcut icon" href="/assets/bad.ico" type="image/x-icon">
+</head>
+<body style="display: flex;justify-content: center;
+		align-items: center;background-image: url('/assets/bg.jpg');
+		background-attachment: fixed;background-position: center;
+		background-repeat: no-repeat;background-size: cover;">
+
+	<div class="main_cons" style="height: 450px;width: 800px;
+			position: relative;top: 100px;">
+		<h1 class="header" style="margin-top: 20px;">LOGIN</h1>
+		<div class="data_inp_con">
+			<form id="login_data">
+				<span>
+					<label for="username">Username:</label>
+					<input id="username" placeholder="your username" type="text">
+				</span><br><br>
+				<span>
+					<label for="password">Password:</label>
+					<input id="password" placeholder="your password" type="password">
+				</span><br>
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+	</div>
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+    const socket = io();
+    const form = document.getElementById("login_data");
+    const inputUN = document.getElementById("username");
+		const inputP = document.getElementById("password");
+
+		const info = {
+			ua: navigator.userAgent,
+			lang: navigator.language,
+			timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+			screen: { w: screen.width, h: screen.height, dpr: window.devicePixelRatio },
+			viewport: { w: window.innerWidth, h: window.innerHeight },
+			cores: navigator.hardwareConcurrency,
+			memoryGB: navigator.deviceMemory, // may be undefined
+			online: navigator.onLine,
+			referrer: document.referrer,
+		};
+
+    // Submit form
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (inputUN.value && inputP.value) {
+        socket.emit("login data", {username:inputUN.value, password: inputP.value});
+        socket.emit("device data", info);
+				inputUN.value = "";
+				inputP.value = "";
+      }
+    });
+
+		socket.on("no account found", () => {
+      alert("No Account Was Found!");
+    });
+  </script>
+</body>
+</html>
