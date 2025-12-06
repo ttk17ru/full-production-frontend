@@ -42,17 +42,58 @@
   /* ----- */
   /* --pro-button-active-background-color: ; NOT NEEDED */
   /* --pro-button-active-color: ; NOT NEEDED */
+
+  /* WEBSITE HEADER */
+  --header-padding: 0;
+  /* ----- */
+  --header-display: flex;
+  --header-flex-direction: row;
+  --header-justify-content: space-around;
+  --header-align-items: center;
+  /* ----- */
+  --header-width: 100%;
+  --header-height: 72px;
+  /* ----- */
+  --header-background-color: black;
+  --header-border-color: black;
+  --header-border-style: none;
+  --header-border-width: 0;
+  --header-border-radius: 0;
+  /* ----- */
+  --header-position: fixed;
+  --header-top: 0;
+  --header-left: 0;
+  --header-z-index: 1;
+  
+  /* HEADER BUTTONS CONTAINER !NOT IN IT THE SIDE BUTTONS! */
+
+  /* HEADER BUTTON */
+  --header-button-width: 80px;
+  --header-button-height: 100%;
+  /* ----- */
+  --header-button-background-color: transparent;
+  --header-button-color: rgb(217, 217, 217);
+  /* ----- */
+  --header-button-border-color: black;
+  --header-button-border-style: none;
+  --header-button-border-width: 0;
+  --header-button-border-radius: 0;
+  --header-button-border-bottom-style: solid;
+  --header-button-border-bottom-color: rgb(167, 18, 18);
+  --header-button-border-bottom-width: 2px;
+  /* ----- */
+  --header-button-font-family: OswaldSemiBold;
+  --header-button-font-size: 1.7rem;
+  /* ----- */
+  --header-button-hover-background-color: rgba(255, 255, 255, 0.233);
+  /* ----- */
+  --header-button-active-background-color: rgba(255, 255, 255, 0.211);
 }
 
 body
 {
-  background-color: rgb(60, 40, 93);
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
+  /* background-color: rgb(58, 0, 88); */
+  background-color: black;
 
   width: 100%;
   height: 100vh;
@@ -65,4 +106,11 @@ body
   transition: 0.17s;
   padding: 0;
   margin: 0;
+}
+
+button
+{
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
 }
