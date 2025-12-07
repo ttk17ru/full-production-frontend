@@ -28,11 +28,11 @@ ttk17ru
 
 ***Used For Making The Project***
 
-Vite: For automating react lib
+**ANYONE FROM THE TEAM CAN ADD HERE**
 
-React.js: For making fast responsive UI
+Next.js: For frontend work and management
 
-HTML & CSS: For the base design
+Python: For automation and data encryptions programs
 
 WebSocket.js: For live streaming of the players data
 
