@@ -14,3 +14,15 @@
     box-shadow: 0 0 16px var(--neon-cyan);
   }
 }
+
+@keyframes happyInOutGrading {
+  0%, 100%
+  {
+    background: black;
+  }
+
+  50%
+  {
+    background: linear-gradient(to top, rgb(72, 149, 0), black, rgb(72, 149, 0));
+  }
+}

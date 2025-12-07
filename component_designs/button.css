@@ -16,7 +16,7 @@
   border-width: var(--nor-button-border-width);
   border-radius: var(--nor-button-border-radius);
 
-  /* box-shadow: 0 0 15px var(--neon-cyan); NOT NEEDED */
+  box-shadow: 0 0 15px var(--nor-button-background-color);
 }
 .nor-button:hover
 {
