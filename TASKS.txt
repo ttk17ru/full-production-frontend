@@ -1,0 +1,59 @@
+THE GOAL
+
+Build a production-grade competition management platform for big esports events that supports:
+
+tournament creation (brackets, formats),
+
+match scheduling and live scoring,
+
+real-time updates to viewers and admins,
+
+stream / overlay integration,
+
+user accounts (players, teams, admins, casters),
+
+reporting and audit/logging,
+
+scalable for many concurrent viewers and matches.
+
+------------------------------------------------
+
+used for frontend:
+
+Next.js | webSocket | socket.io
+
+tasks:
+
+stream overlay
+
+home page
+
+log in page
+
+sign up page
+
+settings page
+
+payment page
+
+pro offers
+
+join us page
+
+------------------------------------------------
+
+// NAGY YOU CAN EDIT HERE
+
+used for backend:
+
+NAGY:
+
+
+
+TTK:
+
+Python app automate managing work with heavy data
+
+Python app encrypt date for safety
+
+C++ anti-cheat engine --> optional
